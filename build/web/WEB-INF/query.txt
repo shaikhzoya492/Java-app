@@ -1,0 +1,9 @@
+create database hospital;
+
+use hospital;
+
+create table user_dtls(id int NOT NULL AUTO_INCREMENT PRIMARY KEY,full_name varchar(50),email varchar(50),phone varchar(10),password varchar(50));
+
+create table appointment(id int NOT NULL AUTO_INCREMENT PRIMARY KEY,fullname varchar(50),gender varchar(45),age varchar(10),appoint_date varchar(45), email varchar(50),phone varchar(20),diseases varchar(50),doctor varchar(50),address varchar(60));
+
+create table doctor(id int NOT NULL AUTO_INCREMENT PRIMARY KEY, fullname  varchar(30), dob varchar(35), qualification varchar(30), email varchar(100),phone varchar(15),password varchar(25));
